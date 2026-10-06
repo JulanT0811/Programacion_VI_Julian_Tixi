@@ -1,0 +1,24 @@
+{
+  "name": "programacion__iv_julian_tixi",
+  "version": "1.0.0",
+  "description": "**Autor:** Julián Oswaldo Tixi Páez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulanT0811/Programacion_VI_Julian_Tixi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulanT0811/Programacion_VI_Julian_Tixi/issues"
+  },
+  "homepage": "https://github.com/JulanT0811/Programacion_VI_Julian_Tixi#readme",
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
