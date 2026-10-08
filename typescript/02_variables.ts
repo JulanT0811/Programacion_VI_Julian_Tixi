@@ -24,3 +24,34 @@ let alumno: string="Pedro Perez";
 let caducado: boolean=false;
 console.log(alumno);
 console.log(caducado);
+
+
+let equipo :string[]=["PIKACHU","CHARMANDER","BULBASAUR"];
+console.log(equipo);
+
+
+let pokemon: string | null = null;
+let pokemonInicial: string | undefined;
+
+let experienciaAcumulada: bigint= 98723982737392n;
+//tipo symbol
+let pokemon1: symbol=Symbol("PIKACHU");
+console.log(pokemon1.toString());
+let pokemon2: symbol=Symbol("PIKACHU");
+console.log(pokemon2.toString());
+console.log(pokemon1===pokemon2);
+
+let pikachu: {
+    nombre: string;
+    nivel: number;
+    vida: number;
+    esLegendario: boolean;
+}={
+    nombre: "PIKACHU",
+    nivel: 5,
+    vida: 35,
+    esLegendario: false
+}
+console.log(pikachu);
+
+
