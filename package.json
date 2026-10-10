@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/JulanT0811/Programacion_VI_Julian_Tixi#readme",
   "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
