@@ -1,0 +1,41 @@
+let medallas = 8;
+let edad = 15;
+let suspendido = false;
+
+let nivel = 45;
+let vida = 60;
+let tipo = "Fuego";
+let ataque = 55;
+let defensa = 40;
+
+if (medallas >= 8 && edad >= 12 && !suspendido) {
+    if (nivel >= 40) {
+        if (vida > 0) {
+            if (tipo === "Fuego" || tipo === "Agua" || tipo === "Eléctrico") {
+                console.log("El entrenador y su pokemon pueden participar");
+
+                if (nivel >= 80 && ataque >= 90 && vida >= 100) {
+                    console.log("Clasificacion: Maestro");
+                } else {
+                    if ((nivel >= 60 && ataque >= 75) || defensa >= 80) {
+                        console.log("Clasificacion: Élite");
+                    } else {
+                        if (nivel >= 40 && ataque >= 50 && vida > 0) {
+                            console.log("Clasificacion: Avanzado");
+                        } else {
+                            console.log("Sin clasificacion especial");
+                        }
+                    }
+                }
+            } else {
+                console.log("El tipo de pokemon no esta permitido");
+            }
+        } else {
+            console.log("El pokemon necesita vida mayor a 0");
+        }
+    } else {
+        console.log("El pokemon debe ser nivel 40 minimo");
+    }
+} else {
+    console.log("No cumples con los requisitos de la liga");
+}

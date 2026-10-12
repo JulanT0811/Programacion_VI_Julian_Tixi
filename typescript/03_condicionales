@@ -1,0 +1,63 @@
+// condiconales
+let nivel: number = 5;
+if(nivel>=5){
+    console.log("El charmander evoluciona a Charmeleon");
+}
+
+// condicionales de deobles o dos caminlos 
+
+if (nivel>=16){
+    console.log("El charmander evoluciona a Charmeleon");
+}else{
+    console.log("El charmander no evoluciona a Charmeleon");
+}
+
+// condicionales de multiples caminos
+
+if (nivel>=16){
+    console.log("El charmander evoluciona a Charmeleon");
+}else if(nivel>=8){
+    console.log("El charmander evoluciona a Charizard");
+}else{
+    console.log("El charmander no evoluciona a Charmeleon ni a Charizard");
+}
+
+//condicionales anidados
+if (nivel>=16){
+    console.log("El charmander evoluciona a Charmeleon");
+}else{
+    if(nivel>=8){
+        console.log("El charmander evoluciona a Charizard");
+    }else{
+        console.log("El charmander no evoluciona a Charmeleon ni a Charizard");
+    }
+}
+
+nivel = -20;
+let poder: number = 25;
+
+
+
+// condicional if con operadores logicos 
+if (nivel>=8 && nivel<=16 && poder>=20){
+    console.log("El charmander evoluciona a Charmeleon");
+}else if(nivel>=16){
+    console.log("El charmander evoluciona a Charizard");
+}else{
+    console.log("El charmander no evoluciona a Charmeleon ni a Charizard");
+}
+
+
+nivel = 5;
+poder = 18;
+
+// condicional if con operadors logicos  or
+
+if (nivel>=8 || poder>=20){
+    console.log("El charmander evoluciona a Charmeleon");
+}else if(nivel>=16){
+    console.log("El charmander evoluciona a Charizard");
+}else{
+    console.log("El charmander no evoluciona a Charmeleon ni a Charizard");
+}
+
