@@ -5,6 +5,7 @@ import Paso2 from './paso2'
 import Paso3 from './paso3'
 import Paso3Suma from './paso3Suma'
 import Paso4 from './paso4'
+import Paso5 from '../../context/UsuarioContext'
 
 // ┌──────────────────────────────────────────────────────────────────┐
 // │  Cambia este número y guarda (Ctrl+S) para navegar entre pasos. │
@@ -28,6 +29,12 @@ export default function Index() {
       return <Paso3Suma /> 
     case 4:
       return <Paso4 />
+    default:
+      case 5:
+      return <Paso5 />
+    default:
+      case 6:
+      return <Paso6 />
     default:
       return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
