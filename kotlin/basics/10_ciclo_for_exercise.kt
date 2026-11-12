@@ -16,3 +16,39 @@ fun main(){
     }
     println("Presupuesto total de la expedicion %if creditos".format(presupuestoTotal))
 }
+
+val portales = arrayOf (
+    portal("Tierra",30),
+    portal("Marte",65),
+    portal("Saturno",95),
+    portal("Jupiter",130),
+    portal("Neptuno",45),
+    portal("Julian",89),
+    portal("Tixi",75),
+)
+
+val costoViaje=50;
+for (portal in portales){
+    println("Portal: ${portal.nombre}")
+    println("Energía: ${portal.energia}")
+    when{
+        portal.energia < 50 -> {
+            println("Estado: INACTIVO")
+            println("No se puede realizar el viaje")
+        }
+        portal.energia < 80 -> {
+            println("Estado: OPERATIVO")
+        }
+        portal.energia < 120 -> {
+            println("Estado: ESTABLE")
+        }
+        else -> {
+            println("Estado: ALTA CAPACIDAD")
+        }
+    }
+}
+if (portal.energia >= costoViaje) {
+    val restante=portal.energia-costoViaje
+    println("Viaje autorizado")
+    println("Energia restante $restante")
+}
